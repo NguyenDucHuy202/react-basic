@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
+//import Component vào
 import MyComponent from './Example/MyComponent';
 
 /**
@@ -29,8 +30,12 @@ function App() {
         >
           Learn React
         </a>
+        dạng 1
+        {/* Khai báo component dạng 1 */}
         <MyComponent/>
-
+        dạng 2
+        {/* Khai báo component dạng 2 */}
+        <MyComponent> </MyComponent>
        
       </header>
     </div>
