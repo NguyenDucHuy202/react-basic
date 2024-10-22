@@ -1,0 +1,1 @@
+nơi lưu trữ hình ảnh - audio -> puclic công khai
