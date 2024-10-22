@@ -35,7 +35,7 @@ function App() {
         <MyComponent/>
         dạng 2
         {/* Khai báo component dạng 2 */}
-        <MyComponent> </MyComponent>
+        {/* <MyComponent> </MyComponent> */}
        
       </header>
     </div>
