@@ -10,6 +10,26 @@ class MyComponent extends React.Component
 
     // dùng class Component luôn phải có render(){}
     // Return ( __KHỐI CODE__)
+    handleClickButton=()=>{
+        alert("Clickme")
+    }
+
+    // onchangName
+    handleOnChangeName = (event) =>
+    {
+        this.setState({
+            name: event.target.value
+        })
+    }
+    handleOnChangeAge =(event) =>
+    {
+        this.setState(
+            {
+                Age: event.target.value
+            }
+        )
+    }
+
     render()
     {
         let name = "Nguyễn Đức Huy"
@@ -34,9 +54,19 @@ class MyComponent extends React.Component
                 My name is {name}, lấy tên từ state: {this.state.name}
                 
             </div>
-
+            <div className="OnChangeName">
+                    <input value={this.state.name} onChange={(event)=>this.handleOnChangeName(event)}>
+                    
+                    </input>
+                    Tôi tên là : {this.state.name}
+            </div>
             <div>
+                <input value={this.state.Age} onChange={(event)=>this.handleOnChangeAge(event)}></input>
                 tuổi của  {this.state.name} là {this.state.Age}
+            </div>
+
+            <div className="clickMe">
+                <button onClick={()=>{this.handleClickButton()}}> clickMe </button>
             </div>
             </React.Fragment>
             </>
