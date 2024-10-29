@@ -17,10 +17,12 @@ class MyComponent extends React.Component
     // onchangName
     handleOnChangeName = (event) =>
     {
+        console.log('Event.Target.Value =', event.target.value , 'Event.target = ', event.target, 'Event = ', event)
         this.setState({
             name: event.target.value
         })
     }
+    // Onchange -> tự tạo oject event -> target -> value
     handleOnChangeAge =(event) =>
     {
         this.setState(

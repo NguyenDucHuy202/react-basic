@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.scss';
 //import Component vào
 import MyComponent from './Example/MyComponent';
+import FormComponent from './Example/FormComponent';
 
 /**
  *  có 2 loại componet: class component / funtion component
@@ -22,21 +23,16 @@ function App() {
           heeloo React
           
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        dạng 1
+        
+       
         {/* Khai báo component dạng 1 */}
-        <MyComponent/>
-        dạng 2
+        {/* <MyComponent/> */}
+       
         {/* Khai báo component dạng 2 */}
         {/* <MyComponent> </MyComponent> */}
        
+       {/* From trong react */}
+       <FormComponent/>
       </header>
     </div>
   );
