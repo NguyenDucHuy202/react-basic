@@ -29,10 +29,12 @@ function App() {
         {/* <MyComponent/> */}
        
         {/* Khai báo component dạng 2 */}
-        {/* <MyComponent> </MyComponent> */}
+        <MyComponent> </MyComponent>
        
        {/* From trong react */}
        <FormComponent/>
+
+       
       </header>
     </div>
   );
